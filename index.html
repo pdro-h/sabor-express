@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Otimização de Rotas - Sabor Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-icon">🚚</span>
+                <span class="nav-title">Sabor Express</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Início</a></li>
+                <li><a href="#clustering" class="nav-link" data-section="clustering">Clustering</a></li>
+                <li><a href="#routes" class="nav-link" data-section="routes">Rotas</a></li>
+                <li><a href="#comparison" class="nav-link" data-section="comparison">Algoritmos</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home/Dashboard Section -->
+    <section id="home" class="section active">
+        <div class="container">
+            <div class="hero">
+                <h1>Sistema de Otimização de Rotas</h1>
+                <h2>Sabor Express - Solução Inteligente para Entregas Eficientes</h2>
+                <p class="hero-description">
+                    Sistema baseado em algoritmos de Inteligência Artificial para otimizar rotas de entrega,
+                    reduzir custos operacionais e aumentar a satisfação dos clientes.
+                </p>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">📦</div>
+                    <div class="metric-value">58</div>
+                    <div class="metric-label">Total de Entregas</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📏</div>
+                    <div class="metric-value">61.08 km</div>
+                    <div class="metric-label">Distância Total</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">⏱️</div>
+                    <div class="metric-value">3.7h</div>
+                    <div class="metric-label">Tempo Estimado</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">🗺️</div>
+                    <div class="metric-value">3</div>
+                    <div class="metric-label">Zonas de Entrega</div>
+                </div>
+            </div>
+
+            <div class="problem-section">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>O Desafio</h3>
+                        <p>
+                            A Sabor Express enfrenta grandes desafios para gerenciar entregas durante horários de pico.
+                            Rotas ineficientes causam atrasos, aumento de custos com combustível e insatisfação dos clientes.
+                        </p>
+                        <h3 style="margin-top: 24px;">Nossa Solução</h3>
+                        <p>
+                            Implementamos algoritmos de IA para otimizar rotas:
+                        </p>
+                        <ul class="solution-list">
+                            <li><strong>K-Means Clustering:</strong> Agrupa entregas em 3 zonas geográficas eficientes</li>
+                            <li><strong>A* (A-Star):</strong> Encontra o caminho mais curto considerando distâncias estimadas</li>
+                            <li><strong>BFS &amp; DFS:</strong> Algoritmos clássicos de busca para comparação de desempenho</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn--primary" onclick="navigateTo('clustering')">
+                    Ver Mapa de Clustering
+                </button>
+                <button class="btn btn--secondary" onclick="navigateTo('routes')">
+                    Explorar Rotas Otimizadas
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clustering Section -->
+    <section id="clustering" class="section">
+        <div class="container">
+            <h1>Mapa de Clustering - K-Means</h1>
+            <p class="section-description">
+                Agrupamento inteligente de pontos de entrega em 3 zonas para otimizar o trabalho dos entregadores.
+            </p>
+
+            <div class="clustering-container">
+                <div class="canvas-wrapper">
+                    <canvas id="clusteringCanvas" width="800" height="600"></canvas>
+                </div>
+                <div class="cluster-info">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Estatísticas dos Clusters</h3>
+                            <div class="cluster-stats" id="clusterStats"></div>
+                            <div class="legend" style="margin-top: 24px;">
+                                <h4>Legenda</h4>
+                                <div class="legend-item">
+                                    <span class="legend-marker" style="background: black;">★</span>
+                                    <span>Depot - Sabor Express</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-marker" style="background: #2196F3;">●</span>
+                                    <span>Zona 1 (6 pontos)</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-marker" style="background: #4CAF50;">●</span>
+                                    <span>Zona 2 (9 pontos)</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-marker" style="background: #F44336;">●</span>
+                                    <span>Zona 3 (5 pontos)</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-marker" style="background: black;">✕</span>
+                                    <span>Centroides</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="routes" class="section">
+        <div class="container">
+            <h1>Rotas Otimizadas por Zona</h1>
+            <p class="section-description">
+                Visualize o caminho otimizado para cada zona de entrega usando o algoritmo A*.
+            </p>
+
+            <div class="zone-tabs">
+                <button class="zone-tab active" data-zone="0" onclick="selectZone(0)">Zona 1</button>
+                <button class="zone-tab" data-zone="1" onclick="selectZone(1)">Zona 2</button>
+                <button class="zone-tab" data-zone="2" onclick="selectZone(2)">Zona 3</button>
+            </div>
+
+            <div class="route-container">
+                <div class="canvas-wrapper">
+                    <canvas id="routeCanvas" width="800" height="600"></canvas>
+                </div>
+                <div class="route-details">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3 id="routeTitle">Zona 1</h3>
+                            <div id="routeSummary" class="route-summary"></div>
+                            <h4 style="margin-top: 24px;">Sequência de Paradas</h4>
+                            <div id="routeSequence" class="route-sequence"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-chart" style="margin-top: 32px;">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Comparação entre Zonas</h3>
+                        <canvas id="zoneComparisonChart" width="800" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Algorithm Comparison Section -->
+    <section id="comparison" class="section">
+        <div class="container">
+            <h1>Comparação de Algoritmos</h1>
+            <p class="section-description">
+                Compare o desempenho dos algoritmos A*, BFS e DFS na busca de caminhos.
+            </p>
+
+            <div class="card">
+                <div class="card__body">
+                    <div class="algorithm-controls">
+                        <div class="form-group">
+                            <label class="form-label" for="originSelect">Origem</label>
+                            <select id="originSelect" class="form-control"></select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="destSelect">Destino</label>
+                            <select id="destSelect" class="form-control"></select>
+                        </div>
+                        <button class="btn btn--primary" onclick="calculateRoutes()">Calcular Rotas</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="algorithmResults" class="algorithm-results" style="display: none;">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Resultados</h3>
+                        <div class="results-table-wrapper">
+                            <table class="results-table" id="resultsTable"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="canvas-wrapper" style="margin-top: 24px;">
+                    <canvas id="pathCanvas" width="800" height="600"></canvas>
+                </div>
+
+                <div class="card" style="margin-top: 24px;">
+                    <div class="card__body">
+                        <h3>Comparação de Desempenho</h3>
+                        <canvas id="performanceChart" width="800" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Documentation Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1>Documentação Técnica</h1>
+            
+            <div class="card">
+                <div class="card__body">
+                    <h2>Sobre o Projeto</h2>
+                    <p>
+                        Este sistema foi desenvolvido para a <strong>Sabor Express</strong>, uma empresa local de delivery
+                        de alimentos que enfrentava desafios com rotas ineficientes durante horários de pico.
+                    </p>
+                    <p>
+                        A solução utiliza algoritmos clássicos de Inteligência Artificial para:
+                    </p>
+                    <ul>
+                        <li>Agrupar entregas geograficamente próximas (Clustering)</li>
+                        <li>Encontrar os caminhos mais curtos entre pontos</li>
+                        <li>Otimizar o tempo e custo das entregas</li>
+                        <li>Melhorar a satisfação dos clientes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="algorithms-grid">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>🎯 Algoritmo A* (A-Star)</h3>
+                        <p>
+                            <strong>Tipo:</strong> Busca Informada com Heurística
+                        </p>
+                        <p>
+                            O A* combina o custo real do caminho percorrido (g) com uma estimativa heurística
+                            da distância até o destino (h). Utiliza a distância euclidiana como heurística,
+                            garantindo encontrar o caminho mais curto de forma eficiente.
+                        </p>
+                        <p>
+                            <strong>Fórmula:</strong> f(n) = g(n) + h(n)
+                        </p>
+                        <p>
+                            <strong>Vantagens:</strong> Otimal e eficiente, explora menos nós que BFS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <h3>🔄 Busca em Largura (BFS)</h3>
+                        <p>
+                            <strong>Tipo:</strong> Busca Cega (Não-Informada)
+                        </p>
+                        <p>
+                            O BFS explora todos os nós em um nível antes de passar para o próximo nível.
+                            Garante encontrar o caminho com menor número de arestas, mas pode explorar
+                            muitos nós desnecessários.
+                        </p>
+                        <p>
+                            <strong>Estrutura:</strong> Usa fila (FIFO)
+                        </p>
+                        <p>
+                            <strong>Vantagens:</strong> Completo e ótimo para grafos não ponderados
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <h3>🌊 Busca em Profundidade (DFS)</h3>
+                        <p>
+                            <strong>Tipo:</strong> Busca Cega (Não-Informada)
+                        </p>
+                        <p>
+                            O DFS explora o máximo possível ao longo de cada ramo antes de retroceder.
+                            Mais rápido em termos de memória, mas não garante encontrar o caminho mais curto.
+                        </p>
+                        <p>
+                            <strong>Estrutura:</strong> Usa pilha (LIFO)
+                        </p>
+                        <p>
+                            <strong>Vantagens:</strong> Usa menos memória que BFS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <h3>📊 K-Means Clustering</h3>
+                        <p>
+                            <strong>Tipo:</strong> Aprendizado Não-Supervisionado
+                        </p>
+                        <p>
+                            Algoritmo de agrupamento que particiona n observações em k clusters, onde cada
+                            observação pertence ao cluster com o centroide mais próximo. Usado para agrupar
+                            entregas geograficamente próximas.
+                        </p>
+                        <p>
+                            <strong>Processo:</strong> Iterativo, minimiza a variância intra-cluster
+                        </p>
+                        <p>
+                            <strong>Aplicação:</strong> Divisão da cidade em 3 zonas de entrega
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__body">
+                    <h2>Benefícios Alcançados</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💰</div>
+                            <h4>Redução de Custos</h4>
+                            <p>Menor consumo de combustível com rotas otimizadas</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⚡</div>
+                            <h4>Entregas Mais Rápidas</h4>
+                            <p>Redução do tempo médio de entrega</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">😊</div>
+                            <h4>Satisfação do Cliente</h4>
+                            <p>Entregas pontuais aumentam a satisfação</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📈</div>
+                            <h4>Escalabilidade</h4>
+                            <p>Sistema preparado para crescimento da operação</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__body">
+                    <h2>Limitações e Melhorias Futuras</h2>
+                    <h3>Limitações Atuais:</h3>
+                    <ul>
+                        <li>Não considera tráfego em tempo real</li>
+                        <li>Capacidade fixa dos veículos não implementada</li>
+                        <li>Janelas de tempo de entrega não consideradas</li>
+                    </ul>
+                    <h3 style="margin-top: 16px;">Sugestões de Melhoria:</h3>
+                    <ul>
+                        <li>Integração com APIs de tráfego (Google Maps, Waze)</li>
+                        <li>Implementação de Vehicle Routing Problem (VRP) completo</li>
+                        <li>Machine Learning para prever demanda e otimizar preventivamente</li>
+                        <li>App mobile para entregadores com GPS em tempo real</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sabor Express - Sistema de Otimização de Rotas</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

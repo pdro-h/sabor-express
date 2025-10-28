@@ -1,0 +1,6 @@
+origem,destino,astar_custo_km,astar_nos,bfs_custo_km,bfs_nos,dfs_custo_km,dfs_nos,melhor_algoritmo
+Depot - Sabor Express,Bairro 5,7.92,2,7.92,2,7.92,2,A*
+Depot - Sabor Express,Bairro 10,4.75,2,4.75,2,4.75,2,A*
+Depot - Sabor Express,Bairro 15,9.03,2,9.03,2,9.03,2,A*
+Bairro 3,Bairro 12,3.78,2,3.78,2,3.78,2,A*
+Bairro 7,Bairro 20,4.36,2,4.36,2,4.36,2,A*

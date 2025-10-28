@@ -1,0 +1,211 @@
+from_id,to_id,from_name,to_name,distance_km,time_min
+0,1,Depot - Sabor Express,Bairro 1,5.01,10.03
+0,2,Depot - Sabor Express,Bairro 2,9.19,18.39
+0,3,Depot - Sabor Express,Bairro 3,3.32,6.64
+0,4,Depot - Sabor Express,Bairro 4,6.07,12.14
+0,5,Depot - Sabor Express,Bairro 5,7.92,15.84
+0,6,Depot - Sabor Express,Bairro 6,9.73,19.47
+0,7,Depot - Sabor Express,Bairro 7,3.49,6.99
+0,8,Depot - Sabor Express,Bairro 8,3.29,6.58
+0,9,Depot - Sabor Express,Bairro 9,0.33,0.66
+0,10,Depot - Sabor Express,Bairro 10,4.75,9.51
+0,11,Depot - Sabor Express,Bairro 11,9.41,18.82
+0,12,Depot - Sabor Express,Bairro 12,6.08,12.16
+0,13,Depot - Sabor Express,Bairro 13,8.05,16.09
+0,14,Depot - Sabor Express,Bairro 14,8.32,16.63
+0,15,Depot - Sabor Express,Bairro 15,9.03,18.06
+0,16,Depot - Sabor Express,Bairro 16,3.1,6.21
+0,17,Depot - Sabor Express,Bairro 17,7.45,14.89
+0,18,Depot - Sabor Express,Bairro 18,1.91,3.82
+0,19,Depot - Sabor Express,Bairro 19,5.61,11.22
+0,20,Depot - Sabor Express,Bairro 20,2.25,4.5
+1,2,Bairro 1,Bairro 2,7.9,15.8
+1,3,Bairro 1,Bairro 3,1.7,3.41
+1,4,Bairro 1,Bairro 4,3.33,6.66
+1,5,Bairro 1,Bairro 5,6.9,13.79
+1,6,Bairro 1,Bairro 6,6.04,12.08
+1,7,Bairro 1,Bairro 7,4.41,8.82
+1,8,Bairro 1,Bairro 8,7.81,15.62
+1,9,Bairro 1,Bairro 9,5.2,10.39
+1,10,Bairro 1,Bairro 10,6.86,13.72
+1,11,Bairro 1,Bairro 11,6.5,13.01
+1,12,Bairro 1,Bairro 12,3.14,6.27
+1,13,Bairro 1,Bairro 13,8.05,16.1
+1,14,Bairro 1,Bairro 14,5.59,11.19
+1,15,Bairro 1,Bairro 15,4.38,8.76
+1,16,Bairro 1,Bairro 16,4.77,9.55
+1,17,Bairro 1,Bairro 17,4.97,9.94
+1,18,Bairro 1,Bairro 18,6.61,13.22
+1,19,Bairro 1,Bairro 19,3.48,6.96
+1,20,Bairro 1,Bairro 20,3.5,6.99
+2,3,Bairro 2,Bairro 3,7.88,15.75
+2,4,Bairro 2,Bairro 4,11.23,22.46
+2,5,Bairro 2,Bairro 5,1.28,2.55
+2,6,Bairro 2,Bairro 6,4.59,9.18
+2,7,Bairro 2,Bairro 7,5.7,11.4
+2,8,Bairro 2,Bairro 8,9.22,18.45
+2,9,Bairro 2,Bairro 9,9.52,19.04
+2,10,Bairro 2,Bairro 10,5.61,11.22
+2,11,Bairro 2,Bairro 11,2.97,5.95
+2,12,Bairro 2,Bairro 12,11.04,22.08
+2,13,Bairro 2,Bairro 13,2.23,4.45
+2,14,Bairro 2,Bairro 14,2.91,5.82
+2,15,Bairro 2,Bairro 15,6.87,13.73
+2,16,Bairro 2,Bairro 16,6.14,12.27
+2,17,Bairro 2,Bairro 17,3.08,6.16
+2,18,Bairro 2,Bairro 18,9.12,18.25
+2,19,Bairro 2,Bairro 19,4.47,8.94
+2,20,Bairro 2,Bairro 20,9.7,19.41
+3,4,Bairro 3,Bairro 4,3.89,7.79
+3,5,Bairro 3,Bairro 5,6.72,13.43
+3,6,Bairro 3,Bairro 6,7.01,14.02
+3,7,Bairro 3,Bairro 7,3.25,6.49
+3,8,Bairro 3,Bairro 8,6.15,12.29
+3,9,Bairro 3,Bairro 9,3.52,7.03
+3,10,Bairro 3,Bairro 10,5.64,11.28
+3,11,Bairro 3,Bairro 11,7.11,14.22
+3,12,Bairro 3,Bairro 12,3.78,7.57
+3,13,Bairro 3,Bairro 13,7.55,15.1
+3,14,Bairro 3,Bairro 14,6.08,12.15
+3,15,Bairro 3,Bairro 15,5.83,11.66
+3,16,Bairro 3,Bairro 16,3.45,6.9
+3,17,Bairro 3,Bairro 17,5.3,10.6
+3,18,Bairro 3,Bairro 18,4.92,9.83
+3,19,Bairro 3,Bairro 19,3.48,6.95
+3,20,Bairro 3,Bairro 20,2.14,4.28
+4,5,Bairro 4,Bairro 5,10.21,20.42
+4,6,Bairro 4,Bairro 6,8.99,17.99
+4,7,Bairro 4,Bairro 7,7.14,14.28
+4,8,Bairro 4,Bairro 8,9.34,18.68
+4,9,Bairro 4,Bairro 9,6.07,12.14
+4,10,Bairro 4,Bairro 10,9.51,19.02
+4,11,Bairro 4,Bairro 11,9.7,19.4
+4,12,Bairro 4,Bairro 12,0.24,0.49
+4,13,Bairro 4,Bairro 13,11.28,22.55
+4,14,Bairro 4,Bairro 14,8.86,17.72
+4,15,Bairro 4,Bairro 15,6.73,13.46
+4,16,Bairro 4,Bairro 16,7.31,14.62
+4,17,Bairro 4,Bairro 17,8.28,16.57
+4,18,Bairro 4,Bairro 18,7.97,15.94
+4,19,Bairro 4,Bairro 19,6.79,13.58
+4,20,Bairro 4,Bairro 20,3.83,7.65
+5,6,Bairro 5,Bairro 6,4.65,9.29
+5,7,Bairro 5,Bairro 7,4.43,8.85
+5,8,Bairro 5,Bairro 8,8.02,16.05
+5,9,Bairro 5,Bairro 9,8.25,16.49
+5,10,Bairro 5,Bairro 10,4.46,8.92
+5,11,Bairro 5,Bairro 11,3.17,6.35
+5,12,Bairro 5,Bairro 12,10.03,20.05
+5,13,Bairro 5,Bairro 13,1.73,3.46
+5,14,Bairro 5,Bairro 14,2.65,5.3
+5,15,Bairro 5,Bairro 15,6.51,13.02
+5,16,Bairro 5,Bairro 16,4.86,9.72
+5,17,Bairro 5,Bairro 17,2.44,4.89
+5,18,Bairro 5,Bairro 18,7.87,15.74
+5,19,Bairro 5,Bairro 19,3.42,6.83
+5,20,Bairro 5,Bairro 20,8.48,16.96
+6,7,Bairro 6,Bairro 7,6.85,13.7
+6,8,Bairro 6,Bairro 8,11.2,22.4
+6,9,Bairro 6,Bairro 9,10.03,20.05
+6,10,Bairro 6,Bairro 10,8.26,16.51
+6,11,Bairro 6,Bairro 11,1.62,3.24
+6,12,Bairro 6,Bairro 12,8.76,17.51
+6,13,Bairro 6,Bairro 13,6.37,12.73
+6,14,Bairro 6,Bairro 14,2.07,4.14
+6,15,Bairro 6,Bairro 15,2.76,5.53
+6,16,Bairro 6,Bairro 16,7.45,14.9
+6,17,Bairro 6,Bairro 17,2.75,5.49
+6,18,Bairro 6,Bairro 18,10.53,21.07
+6,19,Bairro 6,Bairro 19,4.2,8.41
+6,20,Bairro 6,Bairro 20,9.15,18.3
+7,8,Bairro 7,Bairro 8,4.37,8.73
+7,9,Bairro 7,Bairro 9,3.82,7.64
+7,10,Bairro 7,Bairro 10,2.45,4.9
+7,11,Bairro 7,Bairro 11,6.2,12.39
+7,12,Bairro 7,Bairro 12,7.03,14.06
+7,13,Bairro 7,Bairro 13,4.7,9.4
+7,14,Bairro 7,Bairro 14,5.12,10.24
+7,15,Bairro 7,Bairro 15,6.97,13.95
+7,16,Bairro 7,Bairro 16,0.6,1.2
+7,17,Bairro 7,Bairro 17,4.26,8.51
+7,18,Bairro 7,Bairro 18,3.73,7.47
+7,19,Bairro 7,Bairro 19,2.69,5.38
+7,20,Bairro 7,Bairro 20,4.36,8.73
+8,9,Bairro 8,Bairro 9,3.35,6.7
+8,10,Bairro 8,Bairro 10,3.66,7.32
+8,11,Bairro 8,Bairro 11,10.42,20.84
+8,12,Bairro 8,Bairro 12,9.34,18.68
+8,13,Bairro 8,Bairro 13,7.44,14.87
+8,14,Bairro 8,Bairro 14,9.38,18.77
+8,15,Bairro 8,Bairro 15,11.22,22.44
+8,16,Bairro 8,Bairro 16,3.76,7.53
+8,17,Bairro 8,Bairro 17,8.54,17.08
+8,18,Bairro 8,Bairro 18,1.38,2.76
+8,19,Bairro 8,Bairro 19,7.05,14.11
+8,20,Bairro 8,Bairro 20,5.53,11.07
+9,10,Bairro 9,Bairro 10,5.04,10.07
+9,11,Bairro 9,Bairro 11,9.72,19.45
+9,12,Bairro 9,Bairro 12,6.1,12.19
+9,13,Bairro 9,Bairro 13,8.36,16.73
+9,14,Bairro 9,Bairro 14,8.63,17.26
+9,15,Bairro 9,Bairro 15,9.27,18.54
+9,16,Bairro 9,Bairro 16,3.43,6.86
+9,17,Bairro 9,Bairro 17,7.76,15.52
+9,18,Bairro 9,Bairro 18,1.97,3.95
+9,19,Bairro 9,Bairro 19,5.92,11.84
+9,20,Bairro 9,Bairro 20,2.24,4.49
+10,11,Bairro 10,Bairro 11,7.19,14.38
+10,12,Bairro 10,Bairro 12,9.41,18.83
+10,13,Bairro 10,Bairro 13,3.78,7.56
+10,14,Bairro 10,Bairro 14,6.26,12.51
+10,15,Bairro 10,Bairro 15,8.99,17.98
+10,16,Bairro 10,Bairro 16,2.2,4.4
+10,17,Bairro 10,Bairro 17,5.51,11.02
+10,18,Bairro 10,Bairro 18,3.88,7.76
+10,19,Bairro 10,Bairro 19,4.57,9.13
+10,20,Bairro 10,Bairro 20,6.35,12.7
+11,12,Bairro 11,Bairro 12,9.48,18.96
+11,13,Bairro 11,Bairro 13,4.86,9.71
+11,14,Bairro 11,Bairro 14,1.09,2.19
+11,15,Bairro 11,Bairro 15,4.15,8.3
+11,16,Bairro 11,Bairro 16,6.77,13.55
+11,17,Bairro 11,Bairro 17,1.97,3.93
+11,18,Bairro 11,Bairro 18,9.93,19.86
+11,19,Bairro 11,Bairro 19,3.82,7.64
+11,20,Bairro 11,Bairro 20,9.21,18.42
+12,13,Bairro 12,Bairro 13,11.11,22.23
+12,14,Bairro 12,Bairro 14,8.64,17.29
+12,15,Bairro 12,Bairro 15,6.49,12.98
+12,16,Bairro 12,Bairro 16,7.22,14.43
+12,17,Bairro 12,Bairro 17,8.08,16.16
+12,18,Bairro 12,Bairro 18,7.98,15.95
+12,19,Bairro 12,Bairro 19,6.61,13.22
+12,20,Bairro 12,Bairro 20,3.85,7.71
+13,14,Bairro 13,Bairro 14,4.38,8.76
+13,15,Bairro 13,Bairro 15,8.19,16.38
+13,16,Bairro 13,Bairro 16,4.96,9.91
+13,17,Bairro 13,Bairro 17,4.1,8.19
+13,18,Bairro 13,Bairro 18,7.58,15.16
+13,19,Bairro 13,Bairro 19,4.64,9.28
+13,20,Bairro 13,Bairro 20,9.03,18.07
+14,15,Bairro 14,Bairro 15,3.96,7.93
+14,16,Bairro 14,Bairro 16,5.7,11.41
+14,17,Bairro 14,Bairro 17,0.87,1.75
+14,18,Bairro 14,Bairro 18,8.86,17.71
+14,19,Bairro 14,Bairro 19,2.73,5.46
+14,20,Bairro 14,Bairro 20,8.15,16.31
+15,16,Bairro 15,Bairro 16,7.55,15.09
+15,17,Bairro 15,Bairro 17,4.09,8.19
+15,18,Bairro 15,Bairro 18,10.27,20.54
+15,19,Bairro 15,Bairro 19,4.43,8.85
+15,20,Bairro 15,Bairro 20,7.85,15.7
+16,17,Bairro 16,Bairro 17,4.84,9.69
+16,18,Bairro 16,Bairro 18,3.16,6.32
+16,19,Bairro 16,Bairro 19,3.29,6.58
+16,20,Bairro 16,Bairro 20,4.27,8.53
+17,18,Bairro 17,Bairro 18,7.99,15.98
+17,19,Bairro 17,Bairro 19,1.89,3.77
+17,20,Bairro 17,Bairro 20,7.35,14.69
+18,19,Bairro 18,Bairro 19,6.33,12.66
+18,20,Bairro 18,Bairro 20,4.16,8.32
+19,20,Bairro 19,Bairro 20,5.47,10.95
